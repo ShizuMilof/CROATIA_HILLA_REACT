@@ -1,0 +1,22 @@
+{
+  "version" : "0.2.0",
+  "configurations" : [ {
+    "type" : "java",
+    "name" : "Launch Application",
+    "request" : "launch",
+    "mainClass" : "org.vaadin.example.Application"
+  }, {
+    "type" : "java",
+    "request" : "attach",
+    "name" : "Attach to Application started using Maven",
+    "hostName" : "localhost",
+    "port" : 5247
+  }, {
+    "type" : "java",
+    "name" : "Debug using Hotswap Agent",
+    "javaExec" : "/home/mcikor/.vaadin/jdk/jbrsdk-21.0.5-linux-x64-b792.48/bin/java",
+    "request" : "launch",
+    "mainClass" : "org.vaadin.example.Application",
+    "vmArgs" : "-XX:+AllowEnhancedClassRedefinition -XX:+ClassUnloading -XX:HotswapAgent=fatjar"
+  } ]
+}
